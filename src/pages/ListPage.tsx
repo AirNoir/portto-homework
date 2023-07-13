@@ -12,9 +12,10 @@ const ListPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        const ethAddress = process.env.REACT_APP_ETH_ADDRESS
         const response = await axios.get('https://testnets-api.opensea.io/api/v1/assets', {
           params: {
-            owner: '0x85fD692D2a075908079261F5E351e7fE0267dB02',
+            owner: ethAddress,
             offset: 0,
             limit: 20,
           },

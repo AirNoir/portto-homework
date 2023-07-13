@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# TXone React Application Homework
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Dependencies
+- React: 18.2.0
+- React DOM: 18.2.0
+- TypeScript: 4.9.5
+- chakra-ui: 2.7.1
+- emotion: 11.11.1
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
+  - `npm install` or
+  - `yarn`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Folder Structure - Design-System
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+portto-homework
 
-### `npm run build`
+/src
+├─ /pages                                    
+|    |
+|    ├─ /ListPage.tsx                        # display the list of Use OpenSea API
+|    ├─ /DetailPage.tsx                      # display the details according to the path
+├─ /config                                   # config files
+|    ├─ /AssetsTypes.ts                      # define the types
+├─ /resources                                # all kinds of web resources
+├─ App.tsx                                   # root entry
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `start`: Run the application using webpack.
+- `dev`: Run the development server using webpack serve.
+- `test`: Run unit tests using Jest.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Checklist
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [x] There are two pages: list page and detail page. Use client side navigation to switch between different pages.
+- [x] You can use any frontend framework you like, but React is preferred.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Bonus
+
+- [x] Use axios for data retrieval. [Reference](https://github.com/axios/axios)
+- [x] Use Chakra UI for fast building UI. [Reference](https://chakra-ui.com/getting-started)
+- [ ] Use web3.js and use the address from the Metamask Chrome/Firefox extension instead of a hard-coded address. [Reference](https://web3js.readthedocs.io/en/v1.2.6/getting-started.html)
+
+
+
+
+## Tech Stack
+- React: Latest version from [React GitHub](https://github.com/facebook/react/tree/v18.2.0)
+- UI Components - Chakra: [Chakra UI React](https://chakra-ui.com/)
+
+
